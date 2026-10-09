@@ -1,0 +1,1386 @@
+{
+  "Glass": {
+    "name": "Glass",
+    "class": "material",
+    "mapTo": "Glass",
+    "Stages": [
+      {
+        "diffuseColor": [
+          255,
+          255,
+          255,
+          26
+        ],
+        "opacityFactor": 0.1,
+        "metallicFactor": 0,
+        "roughnessFactor": 0.2,
+        "pixelSpecular": false,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "dynamicCubemap": false,
+    "castShadows": false,
+    "version": 1.5
+  },
+  "Mirror": {
+    "name": "Mirror",
+    "class": "material",
+    "mapTo": "Mirror",
+    "Stages": [
+      {
+        "diffuseColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "opacityFactor": 1,
+        "metallicFactor": 1,
+        "roughnessFactor": 0,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "translucentBlendOp": "None",
+    "dynamicCubemap": true,
+    "castShadows": true,
+    "version": 1.5
+  },
+  "Black_shine": {
+    "name": "Black_shine",
+    "class": "material",
+    "mapTo": "Black_shine",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0784313725490196,
+          0.0784313725490196,
+          0.0784313725490196,
+          1
+        ],
+        "specular": [
+          0.8627450980392157,
+          0.8627450980392157,
+          0.8627450980392157,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Black_matte": {
+    "name": "Black_matte",
+    "class": "material",
+    "mapTo": "Black_matte",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.1568627450980392,
+          0.1568627450980392,
+          0.1568627450980392,
+          1
+        ],
+        "specular": [
+          0.1568627450980392,
+          0.1568627450980392,
+          0.1568627450980392,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Chrome": {
+    "name": "Chrome",
+    "class": "material",
+    "mapTo": "Chrome",
+    "Stages": [
+      {
+        "diffuseColor": [
+          200,
+          200,
+          200,
+          255
+        ],
+        "opacityFactor": 1,
+        "metallicFactor": 1,
+        "roughnessFactor": 0,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "translucentBlendOp": "None",
+    "dynamicCubemap": true,
+    "castShadows": true,
+    "version": 1.5
+  },
+  "Interior1": {
+    "name": "Interior1",
+    "class": "material",
+    "mapTo": "Interior1",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.12549019607843137,
+          0.12549019607843137,
+          0.12549019607843137,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Interior2": {
+    "name": "Interior2",
+    "class": "material",
+    "mapTo": "Interior2",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0.8823529411764706,
+          0.5490196078431373,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Headlight": {
+    "name": "Headlight",
+    "class": "Material",
+    "mapTo": "Headlight"
+  },
+  "Headlight_off": {
+    "name": "Headlight_off",
+    "class": "material",
+    "mapTo": "Headlight_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.7529411764705882,
+          0.7529411764705882,
+          0.7529411764705882,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Headlight_on": {
+    "name": "Headlight_on",
+    "class": "material",
+    "mapTo": "Headlight_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.7529411764705882,
+          0.7529411764705882,
+          0.7529411764705882,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          1,
+          1,
+          0.996078431372549,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Taillight": {
+    "name": "Taillight",
+    "class": "Material",
+    "mapTo": "Taillight"
+  },
+  "Taillight_off": {
+    "name": "Taillight_off",
+    "class": "material",
+    "mapTo": "Taillight_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.6274509803921569,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Taillight_on": {
+    "name": "Taillight_on",
+    "class": "material",
+    "mapTo": "Taillight_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.6274509803921569,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          0.5019607843137255,
+          0,
+          0,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Taillight_on2": {
+    "name": "Taillight_on2",
+    "class": "material",
+    "mapTo": "Taillight_on2",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.6274509803921569,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Lturn": {
+    "name": "Lturn",
+    "class": "Material",
+    "mapTo": "Lturn"
+  },
+  "Lturn_off": {
+    "name": "Lturn_off",
+    "class": "material",
+    "mapTo": "Lturn_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0.3137254901960784,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Lturn_on": {
+    "name": "Lturn_on",
+    "class": "material",
+    "mapTo": "Lturn_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0.3137254901960784,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          1,
+          0.5019607843137255,
+          0,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Rturn": {
+    "name": "Rturn",
+    "class": "Material",
+    "mapTo": "Rturn"
+  },
+  "Rturn_off": {
+    "name": "Rturn_off",
+    "class": "material",
+    "mapTo": "Rturn_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0.3137254901960784,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Rturn_on": {
+    "name": "Rturn_on",
+    "class": "material",
+    "mapTo": "Rturn_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0.3137254901960784,
+          0,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          1,
+          0.5019607843137255,
+          0,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Reverse": {
+    "name": "Reverse",
+    "class": "Material",
+    "mapTo": "Reverse"
+  },
+  "Reverse_off": {
+    "name": "Reverse_off",
+    "class": "material",
+    "mapTo": "Reverse_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.7529411764705882,
+          0.7529411764705882,
+          0.7529411764705882,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Reverse_on": {
+    "name": "Reverse_on",
+    "class": "material",
+    "mapTo": "Reverse_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.7529411764705882,
+          0.7529411764705882,
+          0.7529411764705882,
+          1
+        ],
+        "specular": [
+          0.3764705882352941,
+          0.3764705882352941,
+          0.3764705882352941,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          1,
+          1,
+          0.996078431372549,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Treadless": {
+    "name": "Treadless",
+    "class": "material",
+    "mapTo": "Treadless",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.19607843137254902,
+          0.19607843137254902,
+          0.19607843137254902,
+          1
+        ],
+        "specular": [
+          0.19607843137254902,
+          0.19607843137254902,
+          0.19607843137254902,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Mat1": {
+    "name": "Mat1",
+    "class": "material",
+    "mapTo": "Mat1",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.7843137254901961,
+          0.7843137254901961,
+          0.7843137254901961,
+          1
+        ],
+        "specular": [
+          0.7843137254901961,
+          0.7843137254901961,
+          0.7843137254901961,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Mat2": {
+    "name": "Mat2",
+    "class": "material",
+    "mapTo": "Mat2",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0784313725490196,
+          0.0784313725490196,
+          0.0784313725490196,
+          1
+        ],
+        "specular": [
+          0.7843137254901961,
+          0.7843137254901961,
+          0.7843137254901961,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "bCal": {
+    "name": "bCal",
+    "class": "material",
+    "mapTo": "bCal",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.7843137254901961,
+          0.7843137254901961,
+          0.7843137254901961,
+          1
+        ],
+        "roughnessFactor": 0.3,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "guagecluster": {
+    "name": "guagecluster",
+    "class": "Material",
+    "mapTo": "guagecluster"
+  },
+  "guagecluster_off": {
+    "name": "guagecluster_off",
+    "class": "material",
+    "mapTo": "guagecluster_off",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/guagecluster.png",
+        "specular": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "roughnessFactor": 0,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": true,
+    "castShadows": false,
+    "version": 1.0
+  },
+  "guagecluster_on": {
+    "name": "guagecluster_on",
+    "class": "material",
+    "mapTo": "guagecluster_on",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/guagecluster.png",
+        "specular": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "roughnessFactor": 0,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/guagecluster_glow.png",
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": true,
+    "castShadows": false,
+    "version": 1.0
+  },
+  "symbollight_turnL": {
+    "name": "symbollight_turnL",
+    "class": "Material",
+    "mapTo": "symbollight_turnL"
+  },
+  "symbollight_turnL_off": {
+    "name": "symbollight_turnL_off",
+    "class": "material",
+    "mapTo": "symbollight_turnL_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0.25098039215686274,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_turnL_on": {
+    "name": "symbollight_turnL_on",
+    "class": "material",
+    "mapTo": "symbollight_turnL_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0.25098039215686274,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/symbols/leftturn.png",
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_turnR": {
+    "name": "symbollight_turnR",
+    "class": "Material",
+    "mapTo": "symbollight_turnR"
+  },
+  "symbollight_turnR_off": {
+    "name": "symbollight_turnR_off",
+    "class": "material",
+    "mapTo": "symbollight_turnR_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0.25098039215686274,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_turnR_on": {
+    "name": "symbollight_turnR_on",
+    "class": "material",
+    "mapTo": "symbollight_turnR_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0.25098039215686274,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/symbols/rightturn.png",
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_pbrake": {
+    "name": "symbollight_pbrake",
+    "class": "Material",
+    "mapTo": "symbollight_pbrake"
+  },
+  "symbollight_pbrake_off": {
+    "name": "symbollight_pbrake_off",
+    "class": "material",
+    "mapTo": "symbollight_pbrake_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.25098039215686274,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_pbrake_on": {
+    "name": "symbollight_pbrake_on",
+    "class": "material",
+    "mapTo": "symbollight_pbrake_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.25098039215686274,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/symbols/pbrake.png",
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_hbeam": {
+    "name": "symbollight_hbeam",
+    "class": "Material",
+    "mapTo": "symbollight_hbeam"
+  },
+  "symbollight_hbeam_off": {
+    "name": "symbollight_hbeam_off",
+    "class": "material",
+    "mapTo": "symbollight_hbeam_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0.25098039215686274,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "symbollight_hbeam_on": {
+    "name": "symbollight_hbeam_on",
+    "class": "material",
+    "mapTo": "symbollight_hbeam_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0.25098039215686274,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/symbols/hbeam.png",
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "guageneedle": {
+    "name": "guageneedle",
+    "class": "Material",
+    "mapTo": "guageneedle"
+  },
+  "guageneedle_off": {
+    "name": "guageneedle_off",
+    "class": "material",
+    "mapTo": "guageneedle_off",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "guageneedle_on": {
+    "name": "guageneedle_on",
+    "class": "material",
+    "mapTo": "guageneedle_on",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "diffuseColor": [
+          0.5019607843137255,
+          0,
+          0,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Metal001": {
+    "name": "Metal001",
+    "class": "material",
+    "mapTo": "Metal001",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal001_d.png",
+        "normalMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal001_n.png",
+        "specularMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal001_s.png",
+        "roughnessFactor": 0.2,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Metal006": {
+    "name": "Metal006",
+    "class": "material",
+    "mapTo": "Metal006",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal006_d.png",
+        "normalMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal006_n.png",
+        "specularMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal006_s.png",
+        "roughnessFactor": 0.2,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Metal038": {
+    "name": "Metal038",
+    "class": "material",
+    "mapTo": "Metal038",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal038_d.png",
+        "normalMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal038_n.png",
+        "specularMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal038_s.png",
+        "roughnessFactor": 0.2,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "Metal029": {
+    "name": "Metal029",
+    "class": "material",
+    "mapTo": "Metal029",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal029_d.png",
+        "normalMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal029_n.png",
+        "specularMap": "vehicles/Test_v22_449748833469/companion_assets/textures/Metal029_s.png",
+        "roughnessFactor": 0.2,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "NUV_black_shine": {
+    "name": "NUV_black_shine",
+    "class": "material",
+    "mapTo": "NUV_black_shine",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0784313725490196,
+          0.0784313725490196,
+          0.0784313725490196,
+          1
+        ],
+        "specular": [
+          0.7843137254901961,
+          0.7843137254901961,
+          0.7843137254901961,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "NUV_black_matte": {
+    "name": "NUV_black_matte",
+    "class": "material",
+    "mapTo": "NUV_black_matte",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0784313725490196,
+          0.0784313725490196,
+          0.0784313725490196,
+          1
+        ],
+        "specular": [
+          0.0784313725490196,
+          0.0784313725490196,
+          0.0784313725490196,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "NUV_red": {
+    "name": "NUV_red",
+    "class": "material",
+    "mapTo": "NUV_red",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "specular": [
+          0.6274509803921569,
+          0.6274509803921569,
+          0.6274509803921569,
+          1
+        ],
+        "roughnessFactor": 0.7,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "bdisc": {
+    "name": "bdisc",
+    "class": "material",
+    "mapTo": "bdisc",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/bdisc_d.png",
+        "specularMap": "vehicles/Test_v22_449748833469/companion_assets/textures/bdisc_s.png",
+        "roughnessFactor": 0,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "bcall": {
+    "name": "bcall",
+    "class": "material",
+    "mapTo": "bcall",
+    "Stages": [
+      {
+        "colorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/brakecalliper.png",
+        "specular": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "NUV_grey_matte": {
+    "name": "NUV_grey_matte",
+    "class": "material",
+    "mapTo": "NUV_grey_matte",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "specular": [
+          0.0784313725490196,
+          0.0784313725490196,
+          0.0784313725490196,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "NUV_grey_shine": {
+    "name": "NUV_grey_shine",
+    "class": "material",
+    "mapTo": "NUV_grey_shine",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.5019607843137255,
+          0.5019607843137255,
+          0.5019607843137255,
+          1
+        ],
+        "specular": [
+          0.7843137254901961,
+          0.7843137254901961,
+          0.7843137254901961,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "translucent": false,
+    "castShadows": true,
+    "version": 1.0
+  },
+  "bodypaint": {
+    "name": "bodypaint",
+    "class": "material",
+    "mapTo": "bodypaint",
+    "Stages": [
+      {
+        "instanceDiffuse": true,
+        "baseColorMap": "vehicles/Test_v22_449748833469/companion_assets/textures/null.dds",
+        "colorPaletteMap": "vehicles/Test_v22_449748833469/companion_assets/textures/palette.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 1,
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "castShadows": true,
+    "version": 1.5
+  },
+  "oneMore": {
+    "name": "oneMore",
+    "class": "Material",
+    "mapTo": "oneMore"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "controller": "DoorFRCoupler",
+    "force_assist_disabled": true,
+    "sound_node": "DoorFR_latch"
+  },
+  {
+    "controller": "DoorFLCoupler",
+    "force_assist_disabled": true,
+    "sound_node": "DoorFL_latch"
+  },
+  {
+    "controller": "TailgateCoupler",
+    "force_assist_disabled": true,
+    "sound_node": "Tailgate_latch"
+  },
+  {
+    "controller": "HoodCoupler",
+    "force_assist_disabled": true,
+    "sound_node": "Hood_latch"
+  }
+]

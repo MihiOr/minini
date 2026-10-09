@@ -1,0 +1,15 @@
+{
+  "Config type": "Factory",
+  "Configuration": "Four motors \u00b7 direct drive",
+  "Value": 100000,
+  "Description": "test",
+  "Type": "Car",
+  "Drivetrain": "AWD",
+  "Propulsion": "Electric",
+  "Fuel Type": "Battery",
+  "Torque": 2949,
+  "Power": 370,
+  "defaultPaintName1": "Red",
+  "defaultPaintName2": "FFFFFF",
+  "Weight": 710.0
+}

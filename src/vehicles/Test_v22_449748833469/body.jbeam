@@ -1,0 +1,329 @@
+{
+	"body":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"body",
+		}
+
+		"slotType":"body",
+
+		"slots":
+		[
+			["type", "default", "description"],
+			["Roof", "Roof", "Roof"],
+			["Roofrail_R", "Roofrail_R", "Roofrail_R"],
+			["Roofrail_L", "Roofrail_L", "Roofrail_L"],
+			["Quarterpanel_R", "Quarterpanel_R", "Quarterpanel_R"],
+			["Quarterpanel_L", "Quarterpanel_L", "Quarterpanel_L"],
+			["Rockerpanel_L", "Rockerpanel_L", "Rockerpanel_L"],
+			["Fender_R", "Fender_R", "Fender_R"],
+			["Fender_L", "Fender_L", "Fender_L"],
+			["DoorFR", "DoorFR", "DoorFR"],
+			["DoorFL", "DoorFL", "DoorFL"],
+			["Hood", "Hood", "Hood"],
+			["Tailgate", "Tailgate", "Tailgate"],
+			["Windscreen_F", "Windscreen_F", "Windscreen_F"],
+			["Windscreen_R", "Windscreen_R", "Windscreen_R"],
+			["Bumper_F", "Bumper_F", "Bumper_F"],
+			["Headlight_R", "Headlight_R", "Headlight_R"],
+			["Headlight_L", "Headlight_L", "Headlight_L"],
+			["Taillight_R", "Taillight_R", "Taillight_R"],
+			["Taillight_L", "Taillight_L", "Taillight_L"],
+		],
+
+		"props":
+		[
+			["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+		],
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["Body", ["body"]],
+		],
+
+		"nodes":
+		[
+			["id", "posX", "posY", "posZ"],
+			{"frictionCoef":0.7},
+			{"nodeWeight":1.4180559, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "body"]},
+			["CN0", 2.4, 1.02, 0.925 ,{"nodeWeight":0.605143938408}],
+
+			{"nodeWeight":1.3928156, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "body"]},
+			["CN1", 2.4, -1.02, 0.925 ,{"nodeWeight":0.594372843596}],
+
+			{"nodeWeight":1.3762171, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "Windscreen_F", "bodypanel"]},
+			["CN2", 2.43, 0.97, 0.925 ,{"nodeWeight":0.587289567357}],
+
+			{"nodeWeight":1.3562955, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "Windscreen_F", "bodypanel"]},
+			["CN3", 2.43, -0.97, 0.925 ,{"nodeWeight":0.578788184948}],
+
+			{"nodeWeight":1.040251, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "body"]},
+			["CN4", 2.4, 1.05, 0.275 ,{"nodeWeight":0.44391873908}],
+
+			{"nodeWeight":0.6813046, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN6", 2.4, 1.08, 0.4 ,{"nodeWeight":0.290741252795}],
+
+			{"nodeWeight":0.45431042, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN7", 2.4, -1.08, 0.4 ,{"nodeWeight":0.193873314034}],
+
+			{"nodeWeight":1.1177998, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN8", 3.46, 1.02, 0.66265 ,{"nodeWeight":0.477012065127}],
+
+			{"nodeWeight":1.1120048, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN9", 3.46, -1.02, 0.66265 ,{"nodeWeight":0.474539095533}],
+
+			{"nodeWeight":0.6888045, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel"]},
+			["CN10", 3.5, 0.97, 0.66265 ,{"nodeWeight":0.293941774738}],
+
+			{"nodeWeight":0.68750495, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel"]},
+			["CN11", 3.5, -0.97, 0.66265 ,{"nodeWeight":0.293387202238}],
+
+			{"nodeWeight":0.65431035, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN12", 3.74, 0.63, 0.66265 ,{"nodeWeight":0.279221673941}],
+
+			{"nodeWeight":0.65431035, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN13", 3.74, -0.63, 0.66265 ,{"nodeWeight":0.279221673941}],
+
+			{"nodeWeight":0.8095295, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN14", 3.46, 1.08, 0.35579792 ,{"nodeWeight":0.345460196518}],
+
+			{"nodeWeight":0.80896395, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN15", 3.46, -1.08, 0.35579792 ,{"nodeWeight":0.345218852609}],
+
+			{"nodeWeight":0.64431036, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN16", 3.52, 0.97, 0.35579792 ,{"nodeWeight":0.27495425872}],
+
+			{"nodeWeight":0.64431036, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN17", 3.52, -0.97, 0.35579792 ,{"nodeWeight":0.27495425872}],
+
+			{"nodeWeight":0.64431036, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN18", 3.7306545, 0.63, 0.34502012 ,{"nodeWeight":0.27495425872}],
+
+			{"nodeWeight":0.64431036, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN19", 3.7306545, -0.63, 0.34502012 ,{"nodeWeight":0.27495425872}],
+
+			{"nodeWeight":1.0748917, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN28", 3.3162098, 1.1075, 0.37904486 ,{"nodeWeight":0.458701378909}],
+
+			{"nodeWeight":1.0690973, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN29", 3.3150997, -1.1075, 0.3881762 ,{"nodeWeight":0.456228665361}],
+
+			{"nodeWeight":0.5560443, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN86", 1.1263795, 0.915, 1.3113387 ,{"nodeWeight":0.237287428254}],
+
+			{"nodeWeight":0.55608785, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN87", 1.1292666, -0.915, 1.32 ,{"nodeWeight":0.237306012866}],
+
+			{"nodeWeight":1.1651751, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "Windscreen_F", "bodypanel", "bodypanel"]},
+			["CN88", 1.1275083, 0.865, 1.3190159 ,{"nodeWeight":0.497229092978}],
+
+			{"nodeWeight":1.1794777, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "Windscreen_F", "bodypanel", "bodypanel"]},
+			["CN89", 1.1303954, -0.865, 1.3247901 ,{"nodeWeight":0.503332612376}],
+
+			{"nodeWeight":1.1097834, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "Windscreen_R"]},
+			["CN92", 1.124552, 0.865, 1.3245602 ,{"nodeWeight":0.473591130968}],
+
+			{"nodeWeight":1.0992366, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "Windscreen_R"]},
+			["CN93", 1.124552, -0.865, 1.322289 ,{"nodeWeight":0.469090368981}],
+
+			{"nodeWeight":0.45431042, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN94", 1.125, 0.915, 1.32 ,{"nodeWeight":0.193873314034}],
+
+			{"nodeWeight":0.45431042, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN95", 1.125, -0.915, 1.32 ,{"nodeWeight":0.193873314034}],
+
+			{"nodeWeight":1.1771017, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN96", 1.125, 1.02, 0.925 ,{"nodeWeight":0.502318673506}],
+
+			{"nodeWeight":1.1791965, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN97", 1.125, -1.02, 0.925 ,{"nodeWeight":0.50321261254}],
+
+			{"nodeWeight":1.2869276, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "body"]},
+			["CN100", 1.125, 1.08, 0.4 ,{"nodeWeight":0.549185992111}],
+
+			{"nodeWeight":0.9305892, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN101", 1.125, -1.08, 0.4 ,{"nodeWeight":0.397121448829}],
+
+			{"nodeWeight":0.9047498, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "bodypanel", "body"]},
+			["CN104", 0.343915, 1.08, 0.4 ,{"nodeWeight":0.386094692915}],
+
+			{"nodeWeight":1.1775146, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN112", 0.043689437, 0.94594663, 1.1144245 ,{"nodeWeight":0.502494875257}],
+
+			{"nodeWeight":1.1767192, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN113", 0.038141586, -0.95301604, 1.1152152 ,{"nodeWeight":0.50215544471}],
+
+			{"nodeWeight":0.7010371, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN114", -0.4962608, 1.08, 0.27478155 ,{"nodeWeight":0.299161938302}],
+
+			{"nodeWeight":0.6998171, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN115", -0.49683103, -1.08, 0.27349 ,{"nodeWeight":0.298641313124}],
+
+			{"nodeWeight":1.2541128, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "Windscreen_R"]},
+			["CN150", 0.039896287, 0.865, 1.1127943 ,{"nodeWeight":0.535182540406}],
+
+			{"nodeWeight":1.2626616, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "Windscreen_R"]},
+			["CN151", 0.043429855, -0.865, 1.1116763 ,{"nodeWeight":0.538830671979}],
+
+			{"nodeWeight":1.0906181, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel"]},
+			["CN152", 0.04091551, 0.865, 1.1103745 ,{"nodeWeight":0.465412493494}],
+
+			{"nodeWeight":1.0984567, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel"]},
+			["CN153", 0.041980494, -0.865, 1.1120834 ,{"nodeWeight":0.468757552935}],
+
+			{"nodeWeight":0.72867745, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN154", -0.60471207, 0.865, 0.52676153 ,{"nodeWeight":0.310957235129}],
+
+			{"nodeWeight":0.7319843, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs", "bodypanel", "body"]},
+			["CN155", -0.6, -0.865, 0.52517706 ,{"nodeWeight":0.312368406743}],
+
+			{"nodeWeight":0.5543104, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN156", -0.6015845, 0.525, 0.52517706 ,{"nodeWeight":0.236547500389}],
+
+			{"nodeWeight":0.5543104, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN157", -0.6015845, -0.525, 0.52676153 ,{"nodeWeight":0.236547500389}],
+
+			{"nodeWeight":0.5543104, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN160", -0.6, 0.525, 0.2785208 ,{"nodeWeight":0.236547500389}],
+
+			{"nodeWeight":0.5543104, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["CNs"]},
+			["CN161", -0.5987536, -0.525, 0.27727437 ,{"nodeWeight":0.236547500389}],
+
+
+		],
+
+		"beams":
+		[
+			["id1:", "id2:"],
+
+			{"beamPrecompression":1},
+			{"beamType":"|BOUNDED"},
+
+			{"beamType":"|NORMAL"},
+
+
+		],
+
+		"triangles":
+		[
+			["id1:", "id2:", "id3:"],
+			{"stallAngle":0.785},
+			{"dragCoef":100},
+			{"groundModel":"metal"},
+			{"liftCoef":100},
+
+		],
+
+		"quads":
+		[
+			["id1:", "id2:", "id3:", "id4:"],
+			{"stallAngle":0.785},
+			{"groundModel":"metal"},
+			{"dragCoef":100},
+			{"liftCoef":100},
+
+		],
+
+	}
+
+}
+

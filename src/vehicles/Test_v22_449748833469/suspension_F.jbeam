@@ -1,0 +1,1154 @@
+{
+	"suspension_F":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"Front suspension",
+		}
+
+		"slotType":"suspension_F",
+
+		"slots":
+		[
+			["type", "default", "description"],
+			["coils_F", "coils_F", "Coils (front)"],
+			["dampers_F", "dampers_F", "Dampers (front)"],
+			["swaybar_F", "swaybar_F", "Swaybar (front)"],
+			["wheels_F", "wheels_F", "Front wheels"],
+		],
+
+		"variables":
+		[
+			["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+			["$RH_F", "range", "mm", "Suspension (front)", 0, -80, 30, "Ride height", "" {"stepDis":1}],
+			["$Camber_F", "range", "deg", "Suspension (front)", 0, -15, 15, "Camber", "" {"stepDis":0.1}],
+			["$Toe_F", "range", "deg", "Suspension (front)", 0, -15, 15, "Toe", "" {"stepDis":0.1}],
+			["$Damp_bump_F", "range", "Ns/m", "Suspension (front)", 9309, 0, 13298, "Damper rate (bump)", "" {"stepDis":1}],
+			["$Damp_rebd_F", "range", "Ns/m", "Suspension (front)", 9309, 0, 13298, "Damper rate (rebound)", "" {"stepDis":1}],
+			["$Swaybar_F", "range", "Nm/rad", "Suspension (front)", 143, 0, 360, "Swaybar rate", "" {"stepDis":1}],
+		],
+
+		"props":
+		[
+			["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+		],
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["DWB_frontmounts", ["subframe_F"]],
+			["DWB_front_lowerarms", ["lowerarms_F"]],
+			["DWB_front_upperarms", ["upperarms_F"]],
+			["DWB_front_shockrods", ["shockrods_F"]],
+			["DWB_upright_FL", ["upright_FL"]],
+			["DWB_upright_FR", ["upright_FR"]],
+			["steeringrack", ["subframe_F"]],
+			["rackend_boots", ["rackend_boots"]],
+			["tierods", ["tierods"]],
+			["rotor_FL", ["wheel_FL"]],
+			["rotor_FR", ["wheel_FR"]],
+			["brakecalliper_FL", ["upright_FL"]],
+			["brakecalliper_FR", ["upright_FR"]],
+		],
+
+		"nodes":
+		[
+			["id", "posX", "posY", "posZ"],
+			{"frictionCoef":0.7},
+			{"nodeMaterial":"|NM_METAL"},
+			{"collision":true},
+			{"selfCollision":true},
+			{"nodeWeight":7.2286963, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "upperarms_F", "panhard_bar"]},
+			["fx1l", 3.225, 0.46527982, 0.39382893 ,{"nodeWeight":3.08478794703}],
+
+			{"nodeWeight":7.2286963, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "upperarms_F"]},
+			["fx1r", 3.225, -0.46527982, 0.39382893 ,{"nodeWeight":3.08478794703}],
+
+			{"nodeWeight":6.3521743, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "upperarms_F"]},
+			["fx2l", 2.85, 0.46527982, 0.37483364 ,{"nodeWeight":2.7107392405}],
+
+			{"nodeWeight":6.3521743, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "upperarms_F"]},
+			["fx2r", 2.85, -0.46527982, 0.37483364 ,{"nodeWeight":2.7107392405}],
+
+			{"nodeWeight":3.5295656, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "lowerarms_F"]},
+			["fx3l", 3.15, 0.40486524, 0.21757677 ,{"nodeWeight":1.5062137029}],
+
+			{"nodeWeight":3.5295656, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "lowerarms_F"]},
+			["fx3r", 3.15, -0.40486524, 0.21757677 ,{"nodeWeight":1.5062137029}],
+
+			{"nodeWeight":1.9330432, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "lowerarms_F"]},
+			["fx4l", 2.91, 0.40486524, 0.25558618 ,{"nodeWeight":0.824910622467}],
+
+			{"nodeWeight":1.9330432, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "lowerarms_F"]},
+			["fx4r", 2.91, -0.40486524, 0.25558618 ,{"nodeWeight":0.824910622467}],
+
+			{"nodeWeight":9.516703, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "shockrods_F", "dampers_F"]},
+			["fs1l", 3.1328669, 0.72529775, 0.4687525 ,{"nodeWeight":4.06117638528}],
+
+			{"nodeWeight":9.516703, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["subframe_F", "shockrods_F", "dampers_F"]},
+			["fs1r", 3.1328669, -0.72529775, 0.4687525 ,{"nodeWeight":4.06117638528}],
+
+			{"nodeWeight":1.5341, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["subframe_F", "swaybar_F"]},
+			["sbb1_fl", 3.3, 0.34186524, 0.29432088 ,{"nodeWeight":0.6546648238}],
+
+			{"nodeWeight":1.5341, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["subframe_F", "swaybar_F"]},
+			["sbb1_fr", 3.3, -0.34186524, 0.29432088 ,{"nodeWeight":0.6546648238}],
+
+			{"nodeWeight":1.5339129, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["subframe_F", "rackend_boots"]},
+			["st2l", 2.85, 0.26140994, 0.26508853 ,{"nodeWeight":0.654584980382}],
+
+			{"nodeWeight":1.5339129, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["subframe_F", "rackend_boots"]},
+			["st2r", 2.85, -0.26140994, 0.26508853 ,{"nodeWeight":0.654584980382}],
+
+			{"nodeWeight":1.5965216, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["rackend_boots", "tierods"]},
+			["st1l", 2.85, 0.34682965, 0.26508853 ,{"nodeWeight":0.681302739037}],
+
+			{"nodeWeight":1.5965216, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["rackend_boots", "tierods"]},
+			["st1r", 2.85, -0.34682965, 0.26508853 ,{"nodeWeight":0.681302739037}],
+
+			{"nodeWeight":0.02, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["shockrods_F", "coils_F", "dampers_F"]},
+			["fs3l", 3.1261172, 0.721795, 0.42613274 ,{"nodeWeight":0.0085348389779}],
+
+			{"nodeWeight":0.02, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["shockrods_F", "coils_F", "dampers_F"]},
+			["fs3r", 3.1261172, -0.721795, 0.42613274 ,{"nodeWeight":0.0085348389779}],
+
+			{"nodeWeight":4.8318386, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":[]},
+			["fw1l", 3, 0.85, 0.31265002 ,{"nodeWeight":2.06194822091}],
+
+			{"nodeWeight":4.8318386, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":[]},
+			["fw2l", 3, 1.15, 0.31265002 ,{"nodeWeight":2.06194822091}],
+
+			{"nodeWeight":1.6036364, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["upright_FL", "halfshafts_front"]},
+			["fnal", 3.15, 0.9, 0.31265002 ,{"nodeWeight":0.684338922655}],
+
+			{"nodeWeight":2.3236363, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["upright_FL", "tierods", "halfshafts_front"]},
+			["fncl", 2.85, 0.84196436, 0.16265002 ,{"nodeWeight":0.991593083186}],
+
+			{"nodeWeight":1.9636363, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["upperarms_F", "upright_FL"]},
+			["fh1l", 2.993553, 0.71255636, 0.46265003 ,{"nodeWeight":0.837965981583}],
+
+			{"nodeWeight":2.3236363, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["lowerarms_F", "upright_FL"]},
+			["fh2l", 3.046447, 0.9, 0.16265002 ,{"nodeWeight":0.991593083186}],
+
+			{"nodeWeight":4.8318386, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":[]},
+			["fw1r", 3, -0.85, 0.31265002 ,{"nodeWeight":2.06194822091}],
+
+			{"nodeWeight":4.8318386, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":[]},
+			["fw2r", 3, -1.15, 0.31265002 ,{"nodeWeight":2.06194822091}],
+
+			{"nodeWeight":1.6036364, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["upright_FR", "halfshafts_front"]},
+			["fnar", 3.15, -0.9, 0.31265002 ,{"nodeWeight":0.684338922655}],
+
+			{"nodeWeight":2.3236363, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["upright_FR", "tierods", "halfshafts_front"]},
+			["fncr", 2.85, -0.84196436, 0.16265002 ,{"nodeWeight":0.991593083186}],
+
+			{"nodeWeight":1.9636363, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["upperarms_F", "upright_FR"]},
+			["fh1r", 2.993553, -0.71255636, 0.46265003 ,{"nodeWeight":0.837965981583}],
+
+			{"nodeWeight":2.3236363, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["lowerarms_F", "upright_FR"]},
+			["fh2r", 3.046447, -0.9, 0.16265002 ,{"nodeWeight":0.991593083186}],
+
+			{"nodeWeight":8.342791, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["shockrods_F"]},
+			["fs2l", 3.0878682, 0.70194614, 0.18462072 ,{"nodeWeight":3.56021889057}],
+
+			{"nodeWeight":8.342791, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["shockrods_F"]},
+			["fs2r", 3.0878682, -0.70194614, 0.18462072 ,{"nodeWeight":3.56021889057}],
+
+			{"nodeWeight":0.53999996, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["droplinks_F"]},
+			["sbb2_fl", 3.0671577, 0.800973, 0.17363536 ,{"nodeWeight":0.230440635334}],
+
+			{"nodeWeight":0.53999996, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["droplinks_F"]},
+			["sbb2_fr", 3.0671577, -0.800973, 0.17363536 ,{"nodeWeight":0.230440635334}],
+
+			{"nodeWeight":0.02, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["shockrods_F", "coils_F"]},
+			["fs4l", 3.099118, 0.707784, 0.25565368 ,{"nodeWeight":0.0085348389779}],
+
+			{"nodeWeight":0.02, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["shockrods_F", "coils_F"]},
+			["fs4r", 3.099118, -0.707784, 0.25565368 ,{"nodeWeight":0.0085348389779}],
+
+			{"nodeWeight":0.618448, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["swaybar_F", "droplinks_F"]},
+			["sbb3_fl", 3.082878, 0.800973, 0.27289823 ,{"nodeWeight":0.26391770481}],
+
+			{"nodeWeight":0.618448, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":true},
+			{"group":["swaybar_F", "droplinks_F"]},
+			["sbb3_fr", 3.082878, -0.800973, 0.27289823 ,{"nodeWeight":0.26391770481}],
+
+
+		],
+
+		"beams":
+		[
+			["id1:", "id2:"],
+
+			{"beamPrecompression":1},
+			{"beamType":"|BOUNDED"},
+
+			{"beamShortBound":0.063560665, "beamLongBound":0.17132866},
+			{"beamSpring":0, "beamDamp":0},
+			{"beamLimitSpring":3243238.8116, "beamLimitDamp":21.3370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs1l", "fs2l" ],
+
+			{"beamShortBound":0.063560665, "beamLongBound":0.17132866},
+			{"beamSpring":0, "beamDamp":0},
+			{"beamLimitSpring":3243238.8116, "beamLimitDamp":21.3370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs1r", "fs2r" ],
+
+			{"beamType":"|NORMAL"},
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":79526, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":32088, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx2l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":85756, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx2r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":17164, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx3l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":76143, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx3r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":29848, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx4l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":79963, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":85756, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fx2l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":32088, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fx2r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":76143, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fx3l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":17164, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fx3r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":79963, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fx4l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":29848, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":79526, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fx2r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":29403, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fx3l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":79798, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fx3r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":12522, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fx4l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":75233, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":79798, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fx3l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":29403, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fx3r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":75233, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fx4l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":12522, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":69200, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "fx3r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":20766, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "fx4l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":72248, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":72248, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "fx4l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":20766, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":69200, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx4l", "fx4r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":24429, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fs1l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":102252, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fs1l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":33802, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fs1l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":104887, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fs1l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":34825, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "fs1l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":38007, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx4l", "fs1l" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":102252, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":24429, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":104887, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":33802, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":34825, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":38007, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx4r", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":123969, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs1l", "fs1r" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":14988, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "sbb1_fl" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":69796, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "sbb1_fl" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":15373, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "sbb1_fl" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":65420, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "sbb1_fl" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":69796, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "sbb1_fr" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":14988, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "sbb1_fr" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":65420, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "sbb1_fr" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":15373, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "sbb1_fr" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":58432, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb1_fl", "sbb1_fr" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":38100, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "st2l" ,{"beamSpring": 710692.201013, "beamDamp": 37.169636262741086}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":70745, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "st2l" ,{"beamSpring": 710692.201013, "beamDamp": 37.169636262741086}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":28707, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "st2l" ,{"beamSpring": 710692.201013, "beamDamp": 34.16734139693815}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":62578, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "st2l" ,{"beamSpring": 710692.201013, "beamDamp": 34.16734139693815}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":70745, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "st2r" ,{"beamSpring": 710692.201013, "beamDamp": 37.169636262741086}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":38100, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "st2r" ,{"beamSpring": 710692.201013, "beamDamp": 37.169636262741086}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":62578, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "st2r" ,{"beamSpring": 710692.201013, "beamDamp": 34.16734139693815}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":28707, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "st2r" ,{"beamSpring": 710692.201013, "beamDamp": 34.16734139693815}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":44680, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["st2l", "st2r" ,{"beamSpring": 710692.201013, "beamDamp": 28.937435837059283}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":59280, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["st1l", "st1r" ,{"beamSpring": 710692.201013, "beamDamp": 29.52208965659958}],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":43440, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb1_fl", "sbb3_fl" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":99431, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb1_fl", "sbb3_fr" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":99431, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb1_fr", "sbb3_fl" ],
+
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":43440, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb1_fr", "sbb3_fr" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":312467, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5l", "fx1l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":453625, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5l", "fx1r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":177228, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5l", "fx2l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":373563, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5l", "fx2r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":453625, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5r", "fx1l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":312467, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5r", "fx1r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":373563, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5r", "fx2l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":177228, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc5r", "fx2r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":300856, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1l", "fx1l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":445706, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1l", "fx1r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":151704, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1l", "fx2l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":362151, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1l", "fx2r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":445706, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1r", "fx1l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":300856, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1r", "fx1r" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":362151, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1r", "fx2l" ],
+
+			{"beamSpring":3405400.75218, "beamDamp":22.403954024},
+			{"beamDeform":151704, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["cc1r", "fx2r" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs1l", "fs3l" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs1r", "fs3r" ],
+
+			{"beamSpring":6349411.52316, "beamDamp":41.7724439169},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fw1l", "fw2l" ,{"beamSpring": 6349411.52316, "beamDamp": 153.5118367723134}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":28253},
+			{"breakGroup":"wheel_FL"},
+			["fw1l", "fnal" {"beamSpring": 742996.566544, "beamDamp": 37.07201399384404,"beamStrength": 84759.0,beamPrecompression:"$=1+$Toe_F/175-$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":37933},
+			{"breakGroup":"wheel_FL"},
+			["fw1l", "fncl" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 113799.0,beamPrecompression:"$=1-$Toe_F/175+$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":36372},
+			{"breakGroup":"wheel_FL"},
+			["fw1l", "fh1l" {"beamSpring": 742996.566544, "beamDamp": 39.921251812795795,"beamStrength": 109116.0,beamPrecompression:"$=1-$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":29447},
+			{"breakGroup":"wheel_FL"},
+			["fw1l", "fh2l" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 88341.0,beamPrecompression:"$=1+$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":52096},
+			{"breakGroup":"wheel_FL"},
+			["fw2l", "fnal" {"beamSpring": 742996.566544, "beamDamp": 37.07201399384404,"beamStrength": 156288.0,beamPrecompression:"$=1-$Toe_F/175+$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":66832},
+			{"breakGroup":"wheel_FL"},
+			["fw2l", "fncl" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 200496.0,beamPrecompression:"$=1+$Toe_F/175-$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":82643},
+			{"breakGroup":"wheel_FL"},
+			["fw2l", "fh1l" {"beamSpring": 742996.566544, "beamDamp": 39.921251812795795,"beamStrength": 247929.0,beamPrecompression:"$=1+$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":52753},
+			{"breakGroup":"wheel_FL"},
+			["fw2l", "fh2l" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 158259.0,beamPrecompression:"$=1-$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnal", "fncl" ,{"beamSpring": 742996.566544, "beamDamp": 32.90931340390313}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnal", "fh1l" ,{"beamSpring": 742996.566544, "beamDamp": 31.742610897108232}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnal", "fh2l" ,{"beamSpring": 742996.566544, "beamDamp": 32.90931340390313}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncl", "fh1l" ,{"beamSpring": 742996.566544, "beamDamp": 34.8538995276926}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncl", "fh2l" ,{"beamSpring": 742996.566544, "beamDamp": 36.4163488173754}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh1l", "fh2l" ,{"beamSpring": 742996.566544, "beamDamp": 34.8538995276926}],
+
+			{"beamSpring":6349411.52316, "beamDamp":41.7724439169},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fw1r", "fw2r" ,{"beamSpring": 6349411.52316, "beamDamp": 153.5118367723134}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":28253},
+			{"breakGroup":"wheel_FR"},
+			["fw1r", "fnar" {"beamSpring": 742996.566544, "beamDamp": 37.07201399384404,"beamStrength": 84759.0,beamPrecompression:"$=1+$Toe_F/175-$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":37933},
+			{"breakGroup":"wheel_FR"},
+			["fw1r", "fncr" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 113799.0,beamPrecompression:"$=1-$Toe_F/175+$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":36372},
+			{"breakGroup":"wheel_FR"},
+			["fw1r", "fh1r" {"beamSpring": 742996.566544, "beamDamp": 39.921251812795795,"beamStrength": 109116.0,beamPrecompression:"$=1-$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":29447},
+			{"breakGroup":"wheel_FR"},
+			["fw1r", "fh2r" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 88341.0,beamPrecompression:"$=1+$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":52096},
+			{"breakGroup":"wheel_FR"},
+			["fw2r", "fnar" {"beamSpring": 742996.566544, "beamDamp": 37.07201399384404,"beamStrength": 156288.0,beamPrecompression:"$=1-$Toe_F/175+$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":66832},
+			{"breakGroup":"wheel_FR"},
+			["fw2r", "fncr" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 200496.0,beamPrecompression:"$=1+$Toe_F/175-$Camber_F/350"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":82643},
+			{"breakGroup":"wheel_FR"},
+			["fw2r", "fh1r" {"beamSpring": 742996.566544, "beamDamp": 39.921251812795795,"beamStrength": 247929.0,beamPrecompression:"$=1+$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":52753},
+			{"breakGroup":"wheel_FR"},
+			["fw2r", "fh2r" {"beamSpring": 742996.566544, "beamDamp": 42.32026478712143,"beamStrength": 158259.0,beamPrecompression:"$=1-$Camber_F/175"}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnar", "fncr" ,{"beamSpring": 742996.566544, "beamDamp": 32.90931340390313}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnar", "fh1r" ,{"beamSpring": 742996.566544, "beamDamp": 31.742610897108232}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnar", "fh2r" ,{"beamSpring": 742996.566544, "beamDamp": 32.90931340390313}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncr", "fh1r" ,{"beamSpring": 742996.566544, "beamDamp": 34.8538995276926}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncr", "fh2r" ,{"beamSpring": 742996.566544, "beamDamp": 36.4163488173754}],
+
+			{"beamSpring":742996.566544, "beamDamp":4.88813528375},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh1r", "fh2r" ,{"beamSpring": 742996.566544, "beamDamp": 34.8538995276926}],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnal", "cc1rr" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncl", "cc1rr" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnal", "cc2rr" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncl", "cc2rr" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnar", "cc1ll" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncr", "cc1ll" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fnar", "cc2ll" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fncr", "cc2ll" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh1l", "cc8l" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh1l", "cc4l" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh2l", "cc8l" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh2l", "cc4l" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh1r", "cc8r" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh1r", "cc4r" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh2r", "cc8r" ],
+
+			{"beamSpring":0, "beamDamp":190.637278627},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fh2r", "cc4r" ],
+
+			{"beamSpring":583782.986089, "beamDamp":3.84067754006},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "fs2l" ],
+
+			{"beamSpring":583782.986089, "beamDamp":3.84067754006},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "fs2r" ],
+
+			{"beamSpring":583782.986089, "beamDamp":3.84067754006},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "sbb2_fl" ],
+
+			{"beamSpring":583782.986089, "beamDamp":3.84067754006},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "sbb2_fr" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs2l", "fs4l" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fs2r", "fs4r" ],
+
+			{"beamSpring":583782.986089, "beamDamp":3.84067754006},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb2_fl", "sbb3_fl" ],
+
+			{"beamSpring":583782.986089, "beamDamp":3.84067754006},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sbb2_fr", "sbb3_fr" ],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1l", "fh1l" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2l", "fh1l" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3l", "fh2l" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx4l", "fh2l" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":1536270.58928, "beamDamp":215.077929441},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["st1l", "fncl" ,{"beamSpring": 1536270.58928, "beamDamp": 215.077929441}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx1r", "fh1r" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx2r", "fh1r" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx3r", "fh2r" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":384067.327264, "beamDamp":53.7694812934},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["fx4r", "fh2r" ,{"beamSpring": 384067.327264, "beamDamp": 53.7694812934}],
+
+			{"beamSpring":1536270.58928, "beamDamp":215.077929441},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["st1r", "fncr" ,{"beamSpring": 1536270.58928, "beamDamp": 215.077929441}],
+
+
+		
+// Companion kingpin rotation stops
+["fnal", "fx3l", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.19954430575963478, "beamLongBound": 0.13967360784878968, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fnal", "fx4l", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.13549215910801926, "beamLongBound": 0.049135509646620834, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fncl", "fx3l", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.24086957517115704, "beamLongBound": 0.17777566883231555, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fncl", "fx4l", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.20097387749967477, "beamLongBound": 0.24863251262244157, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fnar", "fx3r", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.19954430575963478, "beamLongBound": 0.13967360784878968, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fnar", "fx4r", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.13549215910801926, "beamLongBound": 0.049135509646620834, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fncr", "fx3r", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.24086957517115704, "beamLongBound": 0.17777566883231555, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+["fncr", "fx4r", {"beamType": "|BOUNDED", "beamPrecompression": 1, "beamSpring": 0, "beamDamp": 0, "beamLimitSpring": 1280225.84669, "beamLimitDamp": 106.685487224, "beamShortBound": 0.20097387749967477, "beamLongBound": 0.24863251262244157, "boundZone": 0.002, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": ""}],
+
+// Companion rack housing chassis anchors
+["st2l", "cc1l", {"beamType": "|NORMAL", "beamSpring": 600000, "beamDamp": 50, "beamPrecompression": 1, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": "", "dampCutoffHz": 500}],
+["st2l", "cc1r", {"beamType": "|NORMAL", "beamSpring": 600000, "beamDamp": 50, "beamPrecompression": 1, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": "", "dampCutoffHz": 500}],
+["st2l", "cc5l", {"beamType": "|NORMAL", "beamSpring": 600000, "beamDamp": 50, "beamPrecompression": 1, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": "", "dampCutoffHz": 500}],
+["st2r", "cc1r", {"beamType": "|NORMAL", "beamSpring": 600000, "beamDamp": 50, "beamPrecompression": 1, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": "", "dampCutoffHz": 500}],
+["st2r", "cc1l", {"beamType": "|NORMAL", "beamSpring": 600000, "beamDamp": 50, "beamPrecompression": 1, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": "", "dampCutoffHz": 500}],
+["st2r", "cc5r", {"beamType": "|NORMAL", "beamSpring": 600000, "beamDamp": 50, "beamPrecompression": 1, "beamDeform": "FLT_MAX", "beamStrength": "FLT_MAX", "breakGroup": "", "dampCutoffHz": 500}],
+],
+
+		"rails":
+		{
+			"steeringrack":{"links:":["st1l", "st1r"], "broken:":[], "looped":false, "capped":true}
+			"lowerarm_FL":{"links:":["fx3l", "fh2l"], "broken:":[], "looped":false, "capped":true}
+			"lowerarm_FR":{"links:":["fx3r", "fh2r"], "broken:":[], "looped":false, "capped":true}
+			"shockrod_FL":{"links:":["fs1l", "fs2l"], "broken:":[], "looped":false, "capped":true}
+			"shockrod_FR":{"links:":["fs1r", "fs2r"], "broken:":[], "looped":false, "capped":true}
+		},
+
+		"slidenodes":
+		[
+			["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+			["st2l", "steeringrack", true, true, 0.0, 1533913, "FLT_MAX", "FLT_MAX"],
+			["st2r", "steeringrack", true, true, 0.0, 1533913, "FLT_MAX", "FLT_MAX"],
+			["fs2l", "lowerarm_FL", true, true, 0.0, 1260000, "FLT_MAX", "FLT_MAX"],
+			["sbb2_fl", "lowerarm_FL", true, true, 0.0, 1260000, "FLT_MAX", "FLT_MAX"],
+			["fs2r", "lowerarm_FR", true, true, 0.0, 1260000, "FLT_MAX", "FLT_MAX"],
+			["sbb2_fr", "lowerarm_FR", true, true, 0.0, 1260000, "FLT_MAX", "FLT_MAX"],
+			["fs3l", "shockrod_FL", true, true, 0.0, 70000, "FLT_MAX", "FLT_MAX"],
+			["fs4l", "shockrod_FL", true, true, 0.0, 70000, "FLT_MAX", "FLT_MAX"],
+			["fs3r", "shockrod_FR", true, true, 0.0, 70000, "FLT_MAX", "FLT_MAX"],
+			["fs4r", "shockrod_FR", true, true, 0.0, 70000, "FLT_MAX", "FLT_MAX"],
+		],
+
+		"hydros":
+		[
+			["id1:", "id2:"],
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"dampCutoffHz":500},
+			["st1l", "st2l", {"beamSpring": 710692.201013, "beamDamp": 29.22537765974717,"inRate": 20.0, "outRate": 20.0, "autoCenterRate": 20.0,"factor":0.9, "steeringWheelLock":480}],
+			{"beamSpring":710692.201013, "beamDamp":4.67560712465},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"dampCutoffHz":500},
+			["st1r", "st2r", {"beamSpring": 710692.201013, "beamDamp": 29.22537765974717,"inRate": 20.0, "outRate": 20.0, "autoCenterRate": 20.0,"factor":-0.9, "steeringWheelLock":480}],
+		],
+
+	}
+
+	"coils_F":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"Front coils",
+		}
+
+		"slotType":"coils_F",
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["DWB_front_coils", ["coils_F"]],
+		],
+
+		"beams":
+		[
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL"},
+			{"beamPrecompression":"$=(1+$RH_F*0.0017296513571103149)*1.1222138"},
+			{"beamSpring":37840.4888344, "beamDamp":0},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			["fs1l","fs2l",{"beamSpring": 249455.9788, "beamPrecompression": 1.142789388419602}],
+			["fs1r","fs2r",{"beamSpring": 249455.9788, "beamPrecompression": 1.142789388419602}],
+		],
+
+	}
+
+	"dampers_F":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"Front dampers",
+		}
+
+		"slotType":"dampers_F",
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["DWB_front_dampers", ["dampers_F"]],
+		],
+
+		"beams":
+		[
+			["id1:", "id2:"],
+			{"beamType":"|NORMAL"},
+			{"beamPrecompression":1},
+			{"beamSpring":0, "beamDamp":"$=$Damp_bump_F*0.426741948895"},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			["fs1l","fs2l" {"beamDamp": 28637.87008,"beamDampRebound":"$Damp_rebd_F"}],
+			["fs1r","fs2r" {"beamDamp": 28637.87008,"beamDampRebound":"$Damp_rebd_F"}],
+		],
+
+	}
+
+	"swaybar_F":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"Front swaybar",
+		}
+
+		"slotType":"swaybar_F",
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["ind_front_sweybar", ["swaybar_F"]],
+			["ind_front_droplinks", ["droplinks_F"]],
+		],
+
+		"torsionbars":
+		[
+			["id1:", "id2:", "id3:", "id4:"],
+			{"deform":"FLT_MAX", "strength":"FLT_MAX"},
+			{"spring":"$Swaybar_F", "damp":1},
+			["sbb3_fl", "sbb1_fl", "sbb1_fr", "sbb3_fr"],
+		],
+
+	}
+
+}
+

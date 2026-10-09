@@ -1,0 +1,1267 @@
+{
+  "multiplier": 1.0,
+  "damping_ratio": 0.03,
+  "beams": [
+    {
+      "key": "F/beams/fx1l:st2l",
+      "kind": "rack_support",
+      "nodes": [
+        "fx1l",
+        "st2l"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 37.169636262741086
+    },
+    {
+      "key": "F/beams/fx1r:st2l",
+      "kind": "rack_support",
+      "nodes": [
+        "fx1r",
+        "st2l"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 37.169636262741086
+    },
+    {
+      "key": "F/beams/fx3l:st2l",
+      "kind": "rack_support",
+      "nodes": [
+        "fx3l",
+        "st2l"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 34.16734139693815
+    },
+    {
+      "key": "F/beams/fx3r:st2l",
+      "kind": "rack_support",
+      "nodes": [
+        "fx3r",
+        "st2l"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 34.16734139693815
+    },
+    {
+      "key": "F/beams/fx1l:st2r",
+      "kind": "rack_support",
+      "nodes": [
+        "fx1l",
+        "st2r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 37.169636262741086
+    },
+    {
+      "key": "F/beams/fx1r:st2r",
+      "kind": "rack_support",
+      "nodes": [
+        "fx1r",
+        "st2r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 37.169636262741086
+    },
+    {
+      "key": "F/beams/fx3l:st2r",
+      "kind": "rack_support",
+      "nodes": [
+        "fx3l",
+        "st2r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 34.16734139693815
+    },
+    {
+      "key": "F/beams/fx3r:st2r",
+      "kind": "rack_support",
+      "nodes": [
+        "fx3r",
+        "st2r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 34.16734139693815
+    },
+    {
+      "key": "F/beams/st2l:st2r",
+      "kind": "rack_support",
+      "nodes": [
+        "st2l",
+        "st2r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 28.937435837059283
+    },
+    {
+      "key": "F/beams/st1l:st1r",
+      "kind": "rack_support",
+      "nodes": [
+        "st1l",
+        "st1r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 29.52208965659958
+    },
+    {
+      "key": "F/beams/fw1l:fw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1l",
+        "fw2l"
+      ],
+      "spring_before": 6349411.52316,
+      "damp_before": 41.7724439169,
+      "spring_after": 6349411.52316,
+      "damp_after": 153.5118367723134
+    },
+    {
+      "key": "F/beams/fnal:fw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1l",
+        "fnal"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "F/beams/fncl:fw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1l",
+        "fncl"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fh1l:fw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1l",
+        "fh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "F/beams/fh2l:fw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1l",
+        "fh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fnal:fw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2l",
+        "fnal"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "F/beams/fncl:fw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2l",
+        "fncl"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fh1l:fw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2l",
+        "fh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "F/beams/fh2l:fw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2l",
+        "fh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fnal:fncl",
+      "kind": "hub_upright",
+      "nodes": [
+        "fnal",
+        "fncl"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "F/beams/fh1l:fnal",
+      "kind": "hub_upright",
+      "nodes": [
+        "fnal",
+        "fh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 31.742610897108232
+    },
+    {
+      "key": "F/beams/fh2l:fnal",
+      "kind": "hub_upright",
+      "nodes": [
+        "fnal",
+        "fh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "F/beams/fh1l:fncl",
+      "kind": "hub_upright",
+      "nodes": [
+        "fncl",
+        "fh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "F/beams/fh2l:fncl",
+      "kind": "hub_upright",
+      "nodes": [
+        "fncl",
+        "fh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 36.4163488173754
+    },
+    {
+      "key": "F/beams/fh1l:fh2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "fh1l",
+        "fh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "F/beams/fw1r:fw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1r",
+        "fw2r"
+      ],
+      "spring_before": 6349411.52316,
+      "damp_before": 41.7724439169,
+      "spring_after": 6349411.52316,
+      "damp_after": 153.5118367723134
+    },
+    {
+      "key": "F/beams/fnar:fw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1r",
+        "fnar"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "F/beams/fncr:fw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1r",
+        "fncr"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fh1r:fw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1r",
+        "fh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "F/beams/fh2r:fw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw1r",
+        "fh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fnar:fw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2r",
+        "fnar"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "F/beams/fncr:fw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2r",
+        "fncr"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fh1r:fw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2r",
+        "fh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "F/beams/fh2r:fw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fw2r",
+        "fh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "F/beams/fnar:fncr",
+      "kind": "hub_upright",
+      "nodes": [
+        "fnar",
+        "fncr"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "F/beams/fh1r:fnar",
+      "kind": "hub_upright",
+      "nodes": [
+        "fnar",
+        "fh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 31.742610897108232
+    },
+    {
+      "key": "F/beams/fh2r:fnar",
+      "kind": "hub_upright",
+      "nodes": [
+        "fnar",
+        "fh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "F/beams/fh1r:fncr",
+      "kind": "hub_upright",
+      "nodes": [
+        "fncr",
+        "fh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "F/beams/fh2r:fncr",
+      "kind": "hub_upright",
+      "nodes": [
+        "fncr",
+        "fh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 36.4163488173754
+    },
+    {
+      "key": "F/beams/fh1r:fh2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "fh1r",
+        "fh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "F/beams/fh1l:fx1l",
+      "kind": "wishbone",
+      "nodes": [
+        "fx1l",
+        "fh1l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fh1l:fx2l",
+      "kind": "wishbone",
+      "nodes": [
+        "fx2l",
+        "fh1l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fh2l:fx3l",
+      "kind": "wishbone",
+      "nodes": [
+        "fx3l",
+        "fh2l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fh2l:fx4l",
+      "kind": "wishbone",
+      "nodes": [
+        "fx4l",
+        "fh2l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fncl:st1l",
+      "kind": "front_toe_link",
+      "nodes": [
+        "st1l",
+        "fncl"
+      ],
+      "spring_before": 1536270.58928,
+      "damp_before": 215.077929441,
+      "spring_after": 1536270.58928,
+      "damp_after": 215.077929441
+    },
+    {
+      "key": "F/beams/fh1r:fx1r",
+      "kind": "wishbone",
+      "nodes": [
+        "fx1r",
+        "fh1r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fh1r:fx2r",
+      "kind": "wishbone",
+      "nodes": [
+        "fx2r",
+        "fh1r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fh2r:fx3r",
+      "kind": "wishbone",
+      "nodes": [
+        "fx3r",
+        "fh2r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fh2r:fx4r",
+      "kind": "wishbone",
+      "nodes": [
+        "fx4r",
+        "fh2r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "F/beams/fncr:st1r",
+      "kind": "front_toe_link",
+      "nodes": [
+        "st1r",
+        "fncr"
+      ],
+      "spring_before": 1536270.58928,
+      "damp_before": 215.077929441,
+      "spring_after": 1536270.58928,
+      "damp_after": 215.077929441
+    },
+    {
+      "key": "F/hydros/st1l:st2l",
+      "kind": "rack_actuator",
+      "nodes": [
+        "st1l",
+        "st2l"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 29.22537765974717
+    },
+    {
+      "key": "F/hydros/st1r:st2r",
+      "kind": "rack_actuator",
+      "nodes": [
+        "st1r",
+        "st2r"
+      ],
+      "spring_before": 710692.201013,
+      "damp_before": 4.67560712465,
+      "spring_after": 710692.201013,
+      "damp_after": 29.22537765974717
+    },
+    {
+      "key": "R/beams/rx2l:tlml",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx2l",
+        "tlml"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 44.008637247469046
+    },
+    {
+      "key": "R/beams/rx2r:tlml",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx2r",
+        "tlml"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 44.008637247469046
+    },
+    {
+      "key": "R/beams/rx4l:tlml",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx4l",
+        "tlml"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 36.47329780987252
+    },
+    {
+      "key": "R/beams/rx4r:tlml",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx4r",
+        "tlml"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 36.47329780987252
+    },
+    {
+      "key": "R/beams/rx1r:tlml",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx1r",
+        "tlml"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 44.185545352663574
+    },
+    {
+      "key": "R/beams/rx3r:tlml",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx3r",
+        "tlml"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 39.23333514360181
+    },
+    {
+      "key": "R/beams/rx2l:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx2l",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 44.008637247469046
+    },
+    {
+      "key": "R/beams/rx2r:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx2r",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 44.008637247469046
+    },
+    {
+      "key": "R/beams/rx4l:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx4l",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 36.47329780987252
+    },
+    {
+      "key": "R/beams/rx4r:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx4r",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 36.47329780987252
+    },
+    {
+      "key": "R/beams/rx1l:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx1l",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 44.185545352663574
+    },
+    {
+      "key": "R/beams/rx3l:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "rx3l",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 39.23333514360181
+    },
+    {
+      "key": "R/beams/tlml:tlmr",
+      "kind": "rear_toe_support",
+      "nodes": [
+        "tlml",
+        "tlmr"
+      ],
+      "spring_before": 731906.823518,
+      "damp_before": 4.8151777732,
+      "spring_after": 731906.823518,
+      "damp_after": 35.95692572411036
+    },
+    {
+      "key": "R/beams/rw1l:rw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1l",
+        "rw2l"
+      ],
+      "spring_before": 6349411.52316,
+      "damp_before": 41.7724439169,
+      "spring_after": 6349411.52316,
+      "damp_after": 153.5118367723134
+    },
+    {
+      "key": "R/beams/rnal:rw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1l",
+        "rnal"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rncl:rw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1l",
+        "rncl"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "R/beams/rh1l:rw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1l",
+        "rh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "R/beams/rh2l:rw1l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1l",
+        "rh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rnal:rw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2l",
+        "rnal"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rncl:rw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2l",
+        "rncl"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "R/beams/rh1l:rw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2l",
+        "rh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "R/beams/rh2l:rw2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2l",
+        "rh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rnal:rncl",
+      "kind": "hub_upright",
+      "nodes": [
+        "rnal",
+        "rncl"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "R/beams/rh1l:rnal",
+      "kind": "hub_upright",
+      "nodes": [
+        "rnal",
+        "rh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "R/beams/rh2l:rnal",
+      "kind": "hub_upright",
+      "nodes": [
+        "rnal",
+        "rh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 36.4163488173754
+    },
+    {
+      "key": "R/beams/rh1l:rncl",
+      "kind": "hub_upright",
+      "nodes": [
+        "rncl",
+        "rh1l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 31.742610897108232
+    },
+    {
+      "key": "R/beams/rh2l:rncl",
+      "kind": "hub_upright",
+      "nodes": [
+        "rncl",
+        "rh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "R/beams/rh1l:rh2l",
+      "kind": "hub_upright",
+      "nodes": [
+        "rh1l",
+        "rh2l"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "R/beams/rw1r:rw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1r",
+        "rw2r"
+      ],
+      "spring_before": 6349411.52316,
+      "damp_before": 41.7724439169,
+      "spring_after": 6349411.52316,
+      "damp_after": 153.5118367723134
+    },
+    {
+      "key": "R/beams/rnar:rw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1r",
+        "rnar"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rncr:rw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1r",
+        "rncr"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "R/beams/rh1r:rw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1r",
+        "rh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "R/beams/rh2r:rw1r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw1r",
+        "rh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rnar:rw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2r",
+        "rnar"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rncr:rw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2r",
+        "rncr"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 37.07201399384404
+    },
+    {
+      "key": "R/beams/rh1r:rw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2r",
+        "rh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 39.921251812795795
+    },
+    {
+      "key": "R/beams/rh2r:rw2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rw2r",
+        "rh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 42.32026478712143
+    },
+    {
+      "key": "R/beams/rnar:rncr",
+      "kind": "hub_upright",
+      "nodes": [
+        "rnar",
+        "rncr"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "R/beams/rh1r:rnar",
+      "kind": "hub_upright",
+      "nodes": [
+        "rnar",
+        "rh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "R/beams/rh2r:rnar",
+      "kind": "hub_upright",
+      "nodes": [
+        "rnar",
+        "rh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 36.4163488173754
+    },
+    {
+      "key": "R/beams/rh1r:rncr",
+      "kind": "hub_upright",
+      "nodes": [
+        "rncr",
+        "rh1r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 31.742610897108232
+    },
+    {
+      "key": "R/beams/rh2r:rncr",
+      "kind": "hub_upright",
+      "nodes": [
+        "rncr",
+        "rh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 32.90931340390313
+    },
+    {
+      "key": "R/beams/rh1r:rh2r",
+      "kind": "hub_upright",
+      "nodes": [
+        "rh1r",
+        "rh2r"
+      ],
+      "spring_before": 742996.566544,
+      "damp_before": 4.88813528375,
+      "spring_after": 742996.566544,
+      "damp_after": 34.8538995276926
+    },
+    {
+      "key": "R/beams/rh1l:rx1l",
+      "kind": "wishbone",
+      "nodes": [
+        "rx1l",
+        "rh1l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rh1l:rx2l",
+      "kind": "wishbone",
+      "nodes": [
+        "rx2l",
+        "rh1l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rh2l:rx3l",
+      "kind": "wishbone",
+      "nodes": [
+        "rx3l",
+        "rh2l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rh2l:rx4l",
+      "kind": "wishbone",
+      "nodes": [
+        "rx4l",
+        "rh2l"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rnal:tlml",
+      "kind": "rear_toe_link",
+      "nodes": [
+        "tlml",
+        "rnal"
+      ],
+      "spring_before": 1536270.58928,
+      "damp_before": 215.077929441,
+      "spring_after": 1536270.58928,
+      "damp_after": 215.077929441
+    },
+    {
+      "key": "R/beams/rh1r:rx1r",
+      "kind": "wishbone",
+      "nodes": [
+        "rx1r",
+        "rh1r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rh1r:rx2r",
+      "kind": "wishbone",
+      "nodes": [
+        "rx2r",
+        "rh1r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rh2r:rx3r",
+      "kind": "wishbone",
+      "nodes": [
+        "rx3r",
+        "rh2r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rh2r:rx4r",
+      "kind": "wishbone",
+      "nodes": [
+        "rx4r",
+        "rh2r"
+      ],
+      "spring_before": 384067.327264,
+      "damp_before": 53.7694812934,
+      "spring_after": 384067.327264,
+      "damp_after": 53.7694812934
+    },
+    {
+      "key": "R/beams/rnar:tlmr",
+      "kind": "rear_toe_link",
+      "nodes": [
+        "tlmr",
+        "rnar"
+      ],
+      "spring_before": 1536270.58928,
+      "damp_before": 215.077929441,
+      "spring_after": 1536270.58928,
+      "damp_after": 215.077929441
+    }
+  ],
+  "note": "Existing positive-stiffness structural links only. No added beams or geometry, spring, shock, mass, strength or collision edits."
+}

@@ -1,0 +1,304 @@
+{
+	"Headlight_R":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"Headlight_R",
+		}
+
+		"slotType":"Headlight_R",
+
+		"slots":
+		[
+			["type", "default", "description"],
+		],
+
+		"props":
+		[
+			["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+		],
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["Headlight_R", ["Headlight_R"]],
+		],
+
+		"nodes":
+		[
+			["id", "posX", "posY", "posZ"],
+			{"frictionCoef":0.7},
+			{"nodeWeight":0.75776714, "nodeMaterial":"|NM_METAL"},
+			{"collision":false, "selfCollision":true},
+			{"group":["Headlight_R"]},
+			["sG3_rn", 3.2189748, -0.68187815, 0.5355817 ,{"nodeWeight":0.323371026132}],
+
+			{"nodeWeight":0.3671975, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N0", 3.74, -0.63, 0.66265 ,{"nodeWeight":0.156698576779}],
+
+			{"nodeWeight":0.35719752, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N1", 3.7306545, -0.63, 0.34502012 ,{"nodeWeight":0.152431165825}],
+
+			{"nodeWeight":0.38469377, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N2", 3.5785787, -0.8, 0.66265 ,{"nodeWeight":0.164164969138}],
+
+			{"nodeWeight":0.38469377, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N3", 3.5899835, -0.8, 0.35264117 ,{"nodeWeight":0.164164969138}],
+
+			{"nodeWeight":0.46901625, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N4", 3.5, -0.97, 0.66265 ,{"nodeWeight":0.200148908589}],
+
+			{"nodeWeight":0.46901625, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N5", 3.52, -0.97, 0.35579792 ,{"nodeWeight":0.200148908589}],
+
+			{"nodeWeight":0.2457433, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N8", 3.46, -1.02, 0.66265 ,{"nodeWeight":0.10486897477}],
+
+			{"nodeWeight":0.2557433, "nodeMaterial":"|NM_PLASTIC"},
+			{"collision":true, "selfCollision":false},
+			{"group":["Headlight_R"]},
+			["sG3N9", 3.46, -1.08, 0.35579792 ,{"nodeWeight":0.109136394259}],
+
+
+		],
+
+		"beams":
+		[
+			["id1:", "id2:"],
+
+			{"beamPrecompression":1},
+			{"beamType":"|BOUNDED"},
+
+			{"beamType":"|NORMAL"},
+
+			{"beamSpring":73152.1048796, "beamDamp":29.2609827767},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N0", "sG3N2" ],
+
+			{"beamSpring":73152.1048796, "beamDamp":29.2609827767},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N0", "sG3N3" ],
+
+			{"beamSpring":73152.1048796, "beamDamp":29.2609827767},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N0", "sG3N1" ],
+
+			{"beamSpring":73152.1048796, "beamDamp":29.2609827767},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N2", "sG3N3" ],
+
+			{"beamSpring":73152.1048796, "beamDamp":29.2609827767},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N2", "sG3N1" ],
+
+			{"beamSpring":73152.1048796, "beamDamp":29.2609827767},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N3", "sG3N1" ],
+
+			{"beamSpring":58675.3110053, "beamDamp":23.4701640891},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N2", "sG3N4" ],
+
+			{"beamSpring":58675.3110053, "beamDamp":23.4701640891},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N2", "sG3N5" ],
+
+			{"beamSpring":58675.3110053, "beamDamp":23.4701640891},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N2", "sG3N3" ],
+
+			{"beamSpring":58675.3110053, "beamDamp":23.4701640891},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3N5" ],
+
+			{"beamSpring":58675.3110053, "beamDamp":23.4701640891},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3N3" ],
+
+			{"beamSpring":58675.3110053, "beamDamp":23.4701640891},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N5", "sG3N3" ],
+
+			{"beamSpring":29857.4271964, "beamDamp":11.943069456},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3N8" ],
+
+			{"beamSpring":29857.4271964, "beamDamp":11.943069456},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3N9" ],
+
+			{"beamSpring":29857.4271964, "beamDamp":11.943069456},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3N5" ],
+
+			{"beamSpring":29857.4271964, "beamDamp":11.943069456},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N8", "sG3N9" ],
+
+			{"beamSpring":29857.4271964, "beamDamp":11.943069456},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N8", "sG3N5" ],
+
+			{"beamSpring":29857.4271964, "beamDamp":11.943069456},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N9", "sG3N5" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N0", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N1", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N2", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N3", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N5", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N4", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N5", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N8", "sG3_rn" ],
+
+			{"beamSpring":245761.968595, "beamDamp":1.61685525868},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG3N9", "sG3_rn" ],
+
+			{"beamSpring":324323.88116, "beamDamp":2.13370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":25000},
+			{"breakGroup":""},
+			["sG3N0", "CN13" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":500},
+			{"breakGroup":""},
+			["sG3N0", "sG1N23" ],
+
+			{"beamSpring":324323.88116, "beamDamp":2.13370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":25000},
+			{"breakGroup":""},
+			["sG3N1", "CN19" ],
+
+			{"beamSpring":324323.88116, "beamDamp":2.13370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":25000},
+			{"breakGroup":""},
+			["sG3N4", "CN11" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":500},
+			{"breakGroup":""},
+			["sG3N4", "sG1N27" ],
+
+			{"beamSpring":324323.88116, "beamDamp":2.13370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":25000},
+			{"breakGroup":""},
+			["sG3N5", "CN17" ],
+
+			{"beamSpring":324323.88116, "beamDamp":2.13370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":25000},
+			{"breakGroup":""},
+			["sG3N8", "CN9" ],
+
+			{"beamSpring":324323.88116, "beamDamp":2.13370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":25000},
+			{"breakGroup":""},
+			["sG3N9", "CN15" ],
+
+
+		],
+
+		"triangles":
+		[
+			["id1:", "id2:", "id3:"],
+			{"stallAngle":0.785},
+			{"dragCoef":100},
+			{"groundModel":"metal"},
+			{"liftCoef":100},
+
+		],
+
+		"quads":
+		[
+			["id1:", "id2:", "id3:", "id4:"],
+			{"stallAngle":0.785},
+			{"groundModel":"metal"},
+			{"dragCoef":100},
+			{"liftCoef":100},
+			{"dragCoef":25, "liftCoef":25},
+			["sG3N0", "sG3N2", "sG3N3", "sG3N1"],
+
+			{"dragCoef":25, "liftCoef":25},
+			["sG3N2", "sG3N4", "sG3N5", "sG3N3"],
+
+			{"dragCoef":25, "liftCoef":25},
+			["sG3N4", "sG3N8", "sG3N9", "sG3N5"],
+
+
+		],
+
+	}
+
+}
+

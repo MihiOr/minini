@@ -1,0 +1,565 @@
+{
+	"Roofrail_R":
+	{
+		"information":
+		{
+			"authors":"Delta-Cross",
+			"name":"Roofrail_R",
+		}
+
+		"slotType":"Roofrail_R",
+
+		"slots":
+		[
+			["type", "default", "description"],
+		],
+
+		"props":
+		[
+			["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"],
+		],
+
+		"flexbodies":
+		[
+			["mesh", "[group]:", "nonFlexMaterials"],
+			["Roofrail_R", ["body"]],
+		],
+
+		"nodes":
+		[
+			["id", "posX", "posY", "posZ"],
+			{"frictionCoef":0.7},
+			{"nodeWeight":0.10548881, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel", "body"]},
+			["sG21N1", 2.199175, -0.99543893, 1.0173965 ,{"nodeWeight":0.045016500366}],
+
+			{"nodeWeight":0.1242993, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel", "body"]},
+			["sG21N2", 1.8931915, -0.9675, 1.1225 ,{"nodeWeight":0.0530437255283}],
+
+			{"nodeWeight":0.12853435, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel", "body"]},
+			["sG21N3", 1.5229288, -0.939561, 1.2276036 ,{"nodeWeight":0.054850999019}],
+
+			{"nodeWeight":0.115488805, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel", "body"]},
+			["sG21N6", 2.1094098, -0.94543886, 1.0835433 ,{"nodeWeight":0.0492839177213}],
+
+			{"nodeWeight":0.13429931, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel", "body"]},
+			["sG21N7", 1.7580737, -0.9175, 1.211597 ,{"nodeWeight":0.0573111492847}],
+
+			{"nodeWeight":0.13853435, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel", "body"]},
+			["sG21N8", 1.4177995, -0.8895612, 1.2962997 ,{"nodeWeight":0.0591184185079}],
+
+			{"nodeWeight":0.02674244, "nodeMaterial":"|NM_METAL"},
+			{"collision":true, "selfCollision":false},
+			{"group":["bodypanel"]},
+			["sG21N13", 1.124552, -0.915, 1.32 ,{"nodeWeight":0.0114121209638}],
+
+
+		],
+
+		"beams":
+		[
+			["id1:", "id2:"],
+
+			{"beamPrecompression":1},
+			{"beamType":"|BOUNDED"},
+
+			{"beamType":"|NORMAL"},
+
+			{"beamSpring":14802.8247233, "beamDamp":5.9212711409},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "CN3" ],
+
+			{"beamSpring":14802.8247233, "beamDamp":5.9212711409},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "sG21N6" ],
+
+			{"beamSpring":14802.8247233, "beamDamp":5.9212711409},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "sG21N1" ],
+
+			{"beamSpring":14802.8247233, "beamDamp":5.9212711409},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN3", "sG21N6" ],
+
+			{"beamSpring":14802.8247233, "beamDamp":5.9212711409},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN3", "sG21N1" ],
+
+			{"beamSpring":14802.8247233, "beamDamp":5.9212711409},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "sG21N1" ],
+
+			{"beamSpring":19085.1801804, "beamDamp":7.63414547179},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "sG21N6" ],
+
+			{"beamSpring":19085.1801804, "beamDamp":7.63414547179},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "sG21N7" ],
+
+			{"beamSpring":19085.1801804, "beamDamp":7.63414547179},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "sG21N2" ],
+
+			{"beamSpring":19085.1801804, "beamDamp":7.63414547179},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "sG21N7" ],
+
+			{"beamSpring":19085.1801804, "beamDamp":7.63414547179},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "sG21N2" ],
+
+			{"beamSpring":19085.1801804, "beamDamp":7.63414547179},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "sG21N2" ],
+
+			{"beamSpring":22830.2675239, "beamDamp":9.13216035232},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "sG21N7" ],
+
+			{"beamSpring":22830.2675239, "beamDamp":9.13216035232},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "sG21N8" ],
+
+			{"beamSpring":22830.2675239, "beamDamp":9.13216035232},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "sG21N3" ],
+
+			{"beamSpring":22830.2675239, "beamDamp":9.13216035232},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "sG21N8" ],
+
+			{"beamSpring":22830.2675239, "beamDamp":9.13216035232},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "sG21N3" ],
+
+			{"beamSpring":22830.2675239, "beamDamp":9.13216035232},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "sG21N3" ],
+
+			{"beamSpring":20892.432334, "beamDamp":8.35705401458},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "sG21N8" ],
+
+			{"beamSpring":20892.432334, "beamDamp":8.35705401458},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "CN89" ],
+
+			{"beamSpring":20892.432334, "beamDamp":8.35705401458},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "CN87" ],
+
+			{"beamSpring":20892.432334, "beamDamp":8.35705401458},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "CN89" ],
+
+			{"beamSpring":20892.432334, "beamDamp":8.35705401458},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "CN87" ],
+
+			{"beamSpring":20892.432334, "beamDamp":8.35705401458},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "CN87" ],
+
+			{"beamSpring":283.783396015, "beamDamp":0.113663584374},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "CN93" ],
+
+			{"beamSpring":283.783396015, "beamDamp":0.113663584374},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "sG21N13" ],
+
+			{"beamSpring":283.783396015, "beamDamp":0.113663584374},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "CN87" ],
+
+			{"beamSpring":283.783396015, "beamDamp":0.113663584374},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN93", "sG21N13" ],
+
+			{"beamSpring":283.783396015, "beamDamp":0.113663584374},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN93", "CN87" ],
+
+			{"beamSpring":283.783396015, "beamDamp":0.113663584374},
+			{"beamDeform":"FLT_MAX", "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N13", "CN87" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":240, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":147, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":243, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":153, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN1", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":224, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":131, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":228, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":139, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N1", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":201, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":111, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":208, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":122, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N2", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":178, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":95, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":187, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":109, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N3", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":160, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":93, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":171, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":110, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":239, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN3", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":147, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN3", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":243, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN3", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":153, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN3", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":215, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":124, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":221, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":133, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N6", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":191, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":104, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":199, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":117, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N7", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":171, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":93, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":181, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":109, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N8", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":157, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":90, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":167, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":107, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":157, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":90, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":167, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":107, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN89", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":160, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":93, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":171, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":110, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN87", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":156, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN93", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":90, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN93", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":167, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN93", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":107, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["CN93", "cc3r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":160, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N13", "cc8l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":93, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N13", "cc7r" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":171, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N13", "cc4l" ],
+
+			{"beamSpring":11127.7230594, "beamDamp":2.64289098328},
+			{"beamDeform":110, "beamStrength":"FLT_MAX"},
+			{"breakGroup":""},
+			["sG21N13", "cc3r" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":500},
+			{"breakGroup":""},
+			["sG21N6", "sG9N1" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":500},
+			{"breakGroup":""},
+			["sG21N7", "sG9N2" ],
+
+			{"beamSpring":32432.388116, "beamDamp":0.213370974448},
+			{"beamDeform":"FLT_MAX", "beamStrength":500},
+			{"breakGroup":""},
+			["sG21N8", "sG9N3" ],
+
+
+		],
+
+		"triangles":
+		[
+			["id1:", "id2:", "id3:"],
+			{"stallAngle":0.785},
+			{"dragCoef":100},
+			{"groundModel":"metal"},
+			{"liftCoef":100},
+
+		],
+
+		"quads":
+		[
+			["id1:", "id2:", "id3:", "id4:"],
+			{"stallAngle":0.785},
+			{"groundModel":"metal"},
+			{"dragCoef":100},
+			{"liftCoef":100},
+			{"dragCoef":25, "liftCoef":25},
+			["CN1", "CN3", "sG21N6", "sG21N1"],
+
+			{"dragCoef":25, "liftCoef":25},
+			["sG21N1", "sG21N6", "sG21N7", "sG21N2"],
+
+			{"dragCoef":25, "liftCoef":25},
+			["sG21N2", "sG21N7", "sG21N8", "sG21N3"],
+
+			{"dragCoef":25, "liftCoef":25},
+			["sG21N3", "sG21N8", "CN89", "CN87"],
+
+			{"dragCoef":25, "liftCoef":25},
+			["CN89", "CN93", "sG21N13", "CN87"],
+
+
+		],
+
+	}
+
+}
+

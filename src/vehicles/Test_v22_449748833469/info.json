@@ -1,0 +1,51 @@
+{
+  "Author": "Delta-cross",
+  "Name": "Test_v22_65 - Concept22 Electric",
+  "Type": "Car",
+  "defaultPaintName1": "Red",
+  "paints": {
+    "Gray": {
+      "baseColor": [
+        0.5019607843137255,
+        0.5019607843137255,
+        0.5019607843137255,
+        1
+      ],
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.03,
+      "metallic": 0.5,
+      "roughness": 0.6
+    },
+    "Red": {
+      "baseColor": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.03,
+      "metallic": 0.5,
+      "roughness": 0.6
+    },
+    "FFFFFF": {
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.03,
+      "metallic": 0.5,
+      "roughness": 0.6
+    }
+  },
+  "Propulsion": "Electric",
+  "Fuel Type": "Battery",
+  "Drivetrain": "AWD",
+  "Torque": 2949,
+  "Power": 370,
+  "Weight": 710.0,
+  "default_pc": "default"
+}

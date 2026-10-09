@@ -1,0 +1,35 @@
+{
+  "housing_nodes": [
+    "st2l",
+    "st2r"
+  ],
+  "mounts": [
+    [
+      "st2l",
+      "cc1l"
+    ],
+    [
+      "st2l",
+      "cc1r"
+    ],
+    [
+      "st2l",
+      "cc5l"
+    ],
+    [
+      "st2r",
+      "cc1r"
+    ],
+    [
+      "st2r",
+      "cc1l"
+    ],
+    [
+      "st2r",
+      "cc5r"
+    ]
+  ],
+  "beam_spring": 600000,
+  "beam_damp": 50,
+  "note": "Chassis braces only; moving st1 nodes, steering hydros, rails and joints unchanged."
+}

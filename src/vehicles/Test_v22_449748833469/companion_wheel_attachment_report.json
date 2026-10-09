@@ -1,0 +1,330 @@
+{
+  "multiplier": 3.0,
+  "axles": {
+    "F": [
+      {
+        "nodes": [
+          "fw1l",
+          "fnal"
+        ],
+        "beamStrength": {
+          "before": 28253.0,
+          "after": 84759.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1l",
+          "fncl"
+        ],
+        "beamStrength": {
+          "before": 37933.0,
+          "after": 113799.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1l",
+          "fh1l"
+        ],
+        "beamStrength": {
+          "before": 36372.0,
+          "after": 109116.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1l",
+          "fh2l"
+        ],
+        "beamStrength": {
+          "before": 29447.0,
+          "after": 88341.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2l",
+          "fnal"
+        ],
+        "beamStrength": {
+          "before": 52096.0,
+          "after": 156288.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2l",
+          "fncl"
+        ],
+        "beamStrength": {
+          "before": 66832.0,
+          "after": 200496.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2l",
+          "fh1l"
+        ],
+        "beamStrength": {
+          "before": 82643.0,
+          "after": 247929.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2l",
+          "fh2l"
+        ],
+        "beamStrength": {
+          "before": 52753.0,
+          "after": 158259.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1r",
+          "fnar"
+        ],
+        "beamStrength": {
+          "before": 28253.0,
+          "after": 84759.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1r",
+          "fncr"
+        ],
+        "beamStrength": {
+          "before": 37933.0,
+          "after": 113799.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1r",
+          "fh1r"
+        ],
+        "beamStrength": {
+          "before": 36372.0,
+          "after": 109116.0
+        }
+      },
+      {
+        "nodes": [
+          "fw1r",
+          "fh2r"
+        ],
+        "beamStrength": {
+          "before": 29447.0,
+          "after": 88341.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2r",
+          "fnar"
+        ],
+        "beamStrength": {
+          "before": 52096.0,
+          "after": 156288.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2r",
+          "fncr"
+        ],
+        "beamStrength": {
+          "before": 66832.0,
+          "after": 200496.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2r",
+          "fh1r"
+        ],
+        "beamStrength": {
+          "before": 82643.0,
+          "after": 247929.0
+        }
+      },
+      {
+        "nodes": [
+          "fw2r",
+          "fh2r"
+        ],
+        "beamStrength": {
+          "before": 52753.0,
+          "after": 158259.0
+        }
+      }
+    ],
+    "R": [
+      {
+        "nodes": [
+          "rw1l",
+          "rnal"
+        ],
+        "beamStrength": {
+          "before": 28253.0,
+          "after": 84759.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1l",
+          "rncl"
+        ],
+        "beamStrength": {
+          "before": 28253.0,
+          "after": 84759.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1l",
+          "rh1l"
+        ],
+        "beamStrength": {
+          "before": 28478.0,
+          "after": 85434.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1l",
+          "rh2l"
+        ],
+        "beamStrength": {
+          "before": 28478.0,
+          "after": 85434.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2l",
+          "rnal"
+        ],
+        "beamStrength": {
+          "before": 52096.0,
+          "after": 156288.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2l",
+          "rncl"
+        ],
+        "beamStrength": {
+          "before": 52096.0,
+          "after": 156288.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2l",
+          "rh1l"
+        ],
+        "beamStrength": {
+          "before": 52219.0,
+          "after": 156657.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2l",
+          "rh2l"
+        ],
+        "beamStrength": {
+          "before": 52219.0,
+          "after": 156657.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1r",
+          "rnar"
+        ],
+        "beamStrength": {
+          "before": 28253.0,
+          "after": 84759.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1r",
+          "rncr"
+        ],
+        "beamStrength": {
+          "before": 28253.0,
+          "after": 84759.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1r",
+          "rh1r"
+        ],
+        "beamStrength": {
+          "before": 28478.0,
+          "after": 85434.0
+        }
+      },
+      {
+        "nodes": [
+          "rw1r",
+          "rh2r"
+        ],
+        "beamStrength": {
+          "before": 28478.0,
+          "after": 85434.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2r",
+          "rnar"
+        ],
+        "beamStrength": {
+          "before": 52096.0,
+          "after": 156288.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2r",
+          "rncr"
+        ],
+        "beamStrength": {
+          "before": 52096.0,
+          "after": 156288.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2r",
+          "rh1r"
+        ],
+        "beamStrength": {
+          "before": 52219.0,
+          "after": 156657.0
+        }
+      },
+      {
+        "nodes": [
+          "rw2r",
+          "rh2r"
+        ],
+        "beamStrength": {
+          "before": 52219.0,
+          "after": 156657.0
+        }
+      }
+    ]
+  },
+  "note": "Break and finite deformation thresholds only; no stiffness, damping, mass, geometry or break-group changes."
+}

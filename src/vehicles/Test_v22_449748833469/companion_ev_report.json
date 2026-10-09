@@ -1,0 +1,237 @@
+{
+  "mode": "Wheel output (direct drive)",
+  "csv_sha256": "2db567675cb37925322daccd7061336e3c66943cc03edd1e17e8287a70665ac3",
+  "battery_kwh": 17.28,
+  "battery_mass_kg": 100.0,
+  "shafts": {
+    "FL": {
+      "motor_output_m": [
+        3.0,
+        0.40486524,
+        0.31265002
+      ],
+      "wheel_center_m": [
+        3.0,
+        1.0,
+        0.31265002
+      ],
+      "length_m": 0.59513476,
+      "ratio": 1
+    },
+    "FR": {
+      "motor_output_m": [
+        3.0,
+        -0.40486524,
+        0.31265002
+      ],
+      "wheel_center_m": [
+        3.0,
+        -1.0,
+        0.31265002
+      ],
+      "length_m": 0.59513476,
+      "ratio": 1
+    },
+    "RL": {
+      "motor_output_m": [
+        0.0,
+        0.40486524,
+        0.31265002
+      ],
+      "wheel_center_m": [
+        0.0,
+        1.0,
+        0.31265002
+      ],
+      "length_m": 0.59513476,
+      "ratio": 1
+    },
+    "RR": {
+      "motor_output_m": [
+        0.0,
+        -0.40486524,
+        0.31265002
+      ],
+      "wheel_center_m": [
+        0.0,
+        -1.0,
+        0.31265002
+      ],
+      "length_m": 0.59513476,
+      "ratio": 1
+    }
+  },
+  "ratio_override": {
+    "enabled": true,
+    "original_ratio": 5.4,
+    "ratio": 4.3,
+    "torque_scale": 0.7962962962962962,
+    "rpm_scale": 1.2558139534883723,
+    "reference_speed_kmh": 130.0,
+    "estimated_speed_kmh": 163.25581395348837
+  },
+  "torque_multiplier": 1.25,
+  "weight": {
+    "base_kg": 450.0,
+    "motors_included_kg": 66.0,
+    "battery_kg": 100.0,
+    "left_passenger_kg": 80.0,
+    "right_passenger_kg": 80.0,
+    "total_kg": 710.0,
+    "nonmotor_mass_scale": 0.4267419488952359,
+    "estimated_generated_wheel_mass_kg": 38.356040057094944,
+    "stiffness_damping_scale": 0.4267419488952359,
+    "note": "Estimate for default exported parts, including pressure-wheel nodes; confirm in BeamNG."
+  },
+  "tire_ecu": {
+    "grip": 1.2,
+    "profile": "Scintilla Race Slicks",
+    "carcass": true,
+    "ingame": true,
+    "mode": "Custom Lua",
+    "wheels": {
+      "FL": {
+        "carcass_mass_scale": 0.16387006423657144,
+        "tire_node_mass_kg": 0.0286772612414
+      },
+      "FR": {
+        "carcass_mass_scale": 0.16387006423657144,
+        "tire_node_mass_kg": 0.0286772612414
+      },
+      "RL": {
+        "carcass_mass_scale": 0.2203650228240909,
+        "tire_node_mass_kg": 0.0484803050213
+      },
+      "RR": {
+        "carcass_mass_scale": 0.2203650228240909,
+        "tire_node_mass_kg": 0.0484803050213
+      }
+    },
+    "imu": {
+      "mounts": {
+        "FL": {
+          "nodes": [
+            "cc1ll",
+            "cc2ll",
+            "cc1l"
+          ],
+          "forward": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "left": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "up": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "offset": {
+            "forward": 1.0,
+            "left": 1.05,
+            "up": 0.0
+          }
+        },
+        "FR": {
+          "nodes": [
+            "cc1rr",
+            "cc2rr",
+            "cc1r"
+          ],
+          "forward": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "left": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "up": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "offset": {
+            "forward": 1.0,
+            "left": -1.05,
+            "up": 0.0
+          }
+        },
+        "RL": {
+          "nodes": [
+            "cc4ll",
+            "cc3ll",
+            "cc4l"
+          ],
+          "forward": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "left": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "up": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "offset": {
+            "forward": -1.0,
+            "left": 1.05,
+            "up": 0.0
+          }
+        },
+        "RR": {
+          "nodes": [
+            "cc4rr",
+            "cc3rr",
+            "cc4r"
+          ],
+          "forward": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "left": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "up": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "offset": {
+            "forward": -1.0,
+            "left": -1.05,
+            "up": 0.0
+          }
+        }
+      },
+      "wheelbase": 3.0,
+      "trackFront": 2.0,
+      "trackRear": 2.0,
+      "note": "Four chassis IMUs: specific force in m/s^2, gyro in rad/s; forward/left/up. No heading or true slip angle exposed.",
+      "mass": 710.0
+    },
+    "friction_brakes": "disabled; hardware retained",
+    "regeneration": "per-wheel custom Lua; full motor envelope"
+  },
+  "sound": {
+    "enabled": true,
+    "sample": "ElectricMotor_02",
+    "gain_db_per_motor": -9.0,
+    "audio_rpm_scale": 6.7,
+    "legacy_engine_sound": false
+  }
+}
